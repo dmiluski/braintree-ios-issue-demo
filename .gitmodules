@@ -1,0 +1,6 @@
+[submodule "Carthage/Checkouts/braintree-ios-drop-in"]
+	path = Carthage/Checkouts/braintree-ios-drop-in
+	url = ssh://git@github.com/dmiluski/braintree-ios-drop-in.git
+[submodule "Carthage/Checkouts/braintree_ios"]
+	path = Carthage/Checkouts/braintree_ios
+	url = ssh://git@github.com/dmiluski/braintree_ios.git

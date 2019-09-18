@@ -1,0 +1,3 @@
+binary "https://raw.githubusercontent.com/braintree/braintree_ios/master/Frameworks/CardinalMobile.json" "2.1.4-2"
+github "dmiluski/braintree-ios-drop-in" "449ef7c27d00c6062ea6733e4f1460bcdcc2a4a6"
+github "dmiluski/braintree_ios" "bb22dfb6495dfe6fdc0167a2895b52a4d33be43b"
