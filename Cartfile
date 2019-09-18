@@ -1,0 +1,7 @@
+# Working Braintree Dependencies
+github "dmiluski/braintree_ios" "bugfix/issue_485-CarthageSubmoduleFriendly"
+github "dmiluski/braintree-ios-drop-in" "chore/CarthageSubmoduleFriendly"
+
+# Dependencies which dirty our repo
+# github "braintree/braintree_ios" ~> 4.0
+# github "braintree/braintree-ios-drop-in" ~> 7.0

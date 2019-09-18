@@ -1,0 +1,7 @@
+#!/usr/bin/env sh
+
+set -eu
+
+PLATFORMS="ios"
+
+carthage bootstrap --no-build --use-ssh --use-submodules --platform "$PLATFORMS" "$@"

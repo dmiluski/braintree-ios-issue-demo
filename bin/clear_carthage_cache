@@ -1,0 +1,9 @@
+#!/usr/bin/env sh
+
+set -eu
+
+echo "Clearing Carthage cache..."
+rm -rf ~/Library/Caches/carthage/
+rm -rf ~/Library/Caches/org.carthage.CarthageKit/
+
+echo "Carthage cache cleared."

@@ -1,0 +1,5 @@
+#!/usr/bin/env sh
+
+set -eu
+
+carthage update --no-build --use-ssh --use-submodules "$@"

@@ -1,0 +1,30 @@
+#!/usr/bin/env bash
+
+set -eu
+
+pretty_echo() {
+  green=$(tput setaf 2)
+  reset=$(tput sgr0)
+  msg="$*"
+  printf "\n${green}%s${reset}\n" "$msg"
+}
+
+if type brew &>/dev/null; then
+  pretty_echo "Checking for Homebrew updates…"
+  brew update
+else
+  pretty_echo "Installing Homebrew…"
+  /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+fi
+
+pretty_echo "Installing Homebrew dependencies"
+
+brew bundle --file=- <<EOF
+  brew 'carthage'
+EOF
+
+pretty_echo "Adding Git Repos to Known Hosts"
+ssh-keygen -R github.com
+
+pretty_echo "Fetching dependencies…"
+bin/fetch
